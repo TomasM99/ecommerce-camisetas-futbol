@@ -1,4 +1,5 @@
 import './NavBar.scss';
+import CartWidget from '../CartWidget/CartWidget';
 
 function NavBar() {
     return (
@@ -9,6 +10,7 @@ function NavBar() {
                 <li><button>Productos</button></li>
                 <li><button>Nosotros</button></li>
             </ul>
+            <CartWidget />
         </div>
     );
 }
