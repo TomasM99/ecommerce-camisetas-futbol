@@ -5,7 +5,7 @@ function ItemCard({imagen, nombre, precio}) {
         <div className='tarjeta'>
             <img src={`/assets/${imagen}`} alt="Producto"/>
             <p>{nombre}</p>
-            <p>${precio}</p>
+            <p><strong>${precio}</strong></p>
             <button>COMPRAR</button>
         </div>
     );
