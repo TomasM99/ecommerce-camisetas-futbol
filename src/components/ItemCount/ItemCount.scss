@@ -1,0 +1,22 @@
+.card-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div{
+        padding-bottom: 10%;
+    }
+}
+.controler{
+    display: flex;
+    justify-content: center;
+    button{
+        width: 50px;
+    }
+    p{
+        padding: 0% 20% 0% 20%;
+        font-size: 20px;
+    }
+}
+.cart-button{
+    border-radius: 4px !important;
+}
