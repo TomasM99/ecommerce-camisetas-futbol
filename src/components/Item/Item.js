@@ -1,7 +1,10 @@
 import ItemCount from '../ItemCount/ItemCount';
-import './ItemCard.scss';
+import './Item.scss';
 
-function ItemCard({imagen, nombre, precio, stock}) {
+function Item({data}) {
+
+    const {imagen, nombre, precio, stock} = data;
+
     return (
         <div className='tarjeta'>
             <img src={`/assets/${imagen}`} alt="Producto"/>
@@ -12,4 +15,4 @@ function ItemCard({imagen, nombre, precio, stock}) {
     );
 }
 
-export default ItemCard;
+export default Item;
