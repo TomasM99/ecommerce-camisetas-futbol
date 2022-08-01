@@ -1,4 +1,3 @@
-import ItemCount from '../ItemCount/ItemCount';
 import './Item.scss';
 
 function Item({data}) {

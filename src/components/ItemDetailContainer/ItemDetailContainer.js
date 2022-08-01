@@ -1,15 +1,15 @@
 import { useEffect, useState } from 'react';
 import './ItemDetailContainer.scss';
 import ItemDetail from '../ItemDetail/ItemDetail';
-import product from '../../utils/product-mock';
+import products from '../../utils/products';
 
-function ItemDetailContainer() {
+function ItemDetailContainer({division}) {
 
     const [item, setItem] = useState([]);
 
     const getItem = new Promise((resolve, reject) => {
         setTimeout( () => {
-            resolve(product[0])
+            resolve(products[0])
         }, 2000)
     });
 
@@ -23,7 +23,7 @@ function ItemDetailContainer() {
 
     return (
         <div>
-            <h2>Detalle a terminar</h2>
+            <h2>{division}</h2>
             <ItemDetail data={item}/>
         </div>
     );

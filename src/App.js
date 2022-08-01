@@ -7,8 +7,8 @@ function App() {
   return (
     <div>
       <NavBar />
+      <ItemDetailContainer division="Detalle a terminar"/>
       <ItemListContainer division="Productos disponibles"/>
-      <ItemDetailContainer/>
     </div>
   );
 }
