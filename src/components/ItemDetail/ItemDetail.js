@@ -6,7 +6,7 @@ function ItemDetail({data}) {
     const {imagen, nombre, precio, descripcion, stock} = data;
 
     return (
-        <div className='tarjeta'>
+        <div className='detalle'>
             <img src={`/assets/${imagen}`} alt="Producto"/>
             <p>{nombre}</p>
             <p>{descripcion}</p>

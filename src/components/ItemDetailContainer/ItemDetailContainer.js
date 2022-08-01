@@ -10,7 +10,7 @@ function ItemDetailContainer({division}) {
     const getItem = new Promise((resolve, reject) => {
         setTimeout( () => {
             resolve(products[0])
-        }, 2000)
+        }, 500)
     });
 
     useEffect( () => {
