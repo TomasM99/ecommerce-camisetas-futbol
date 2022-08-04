@@ -4,12 +4,6 @@
     align-items: center;
     width: 100%;
     box-shadow: 1px 3px 5px #cac8c8;
-    img{
-        margin-left: 2.5%;
-        padding-top: 1%;
-        padding-bottom: 1%;
-        height: 100%;
-    }
     .carrito{
         margin-right: 2.5%;
     }
@@ -25,6 +19,31 @@
             button{
                 background: none;
                 border: none;
+                font-size: 20px;
+            }
+        }
+    }
+}
+.logo{
+    margin-left: 2.5%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        height: 100%;
+}
+
+.categorias{
+    margin: 2% 2%;
+    .categorias-lista{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .categoria-item{
+            list-style: none;
+            margin: 0 1.5% 0 1.5%;
+            button{
+                background: none;
+                border: 1px solid black;
+                border-radius: 5px;
                 font-size: 20px;
             }
         }

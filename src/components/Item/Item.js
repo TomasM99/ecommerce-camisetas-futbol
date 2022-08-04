@@ -7,7 +7,7 @@ function Item({data}) {
 
     return (
         <div className='tarjeta'>
-            <Link to={`/productos/${id}`} className="items-tarjeta">
+            <Link to={`/item/${id}`} className="items-tarjeta">
                 <img src={`/assets/${imagen}`} alt="Producto"/>
                 <p>{nombre}</p>
                 <p><strong>${precio}</strong></p>
