@@ -16,9 +16,9 @@ function NavBar() {
             </div>
             <div className='categorias'>
                 <ul className='categorias-lista'>
-                    <Link to="/category/1" className='categoria-item'><li><button>Selecciones</button></li></Link>
-                    <Link to="/category/2" className='categoria-item'><li><button>Clubs Argentinos</button></li></Link>
-                    <Link to="/category/3" className='categoria-item'><li><button>Clubs Europeos</button></li></Link>
+                    <Link to="/category/seleccion" className='categoria-item'><li><button>Selecciones</button></li></Link>
+                    <Link to="/category/club-argentino" className='categoria-item'><li><button>Clubs Argentinos</button></li></Link>
+                    <Link to="/category/club-europeo" className='categoria-item'><li><button>Clubs Europeos</button></li></Link>
                 </ul>
             </div>
         </>

@@ -30,7 +30,7 @@ function ItemDetailContainer({division}) {
     return (
         <div>
             <h2>{division}</h2>
-            <ItemDetail data={item}/>
+            {Object.keys(item).length > 0 && <ItemDetail data={item}/>}
         </div>
     );
 }

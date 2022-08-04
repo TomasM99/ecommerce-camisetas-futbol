@@ -16,7 +16,7 @@ function App() {
           <Route path="/productos" element={<Productos />}/>
           <Route path="/nosotros" element={<Nosotros />}/>
           <Route path="/item/:id" element={<Detalle />}/>
-          <Route path="/category/:id" element={<Categoria />}/>
+          <Route path="/category/:category" element={<Categoria />}/>
           <Route path="*" element={<h1>ERROR 404</h1>}/>
         </Routes>
         <footer>Footer a desarrollar</footer>

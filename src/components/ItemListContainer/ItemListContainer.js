@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import './ItemListContainer.scss';
 import ItemList from '../ItemList/ItemList';
 import products from '../../utils/products';
@@ -6,11 +7,18 @@ import products from '../../utils/products';
 function ItemListContainer({division}) {
 
     const [listaProductos, setListaProductos] = useState([]);
+    const {category} = useParams();
+
+    const filterProducts = products.filter((product) => product.categoria === category);
 
     const getProductos = new Promise((resolve, reject) => {
         setTimeout( () => {
-            resolve(products)
-        }, 1000)
+            if(category){
+                resolve(filterProducts);
+            }else{
+                resolve(products)
+            }
+        }, 500)
     });
 
     useEffect( () => {
