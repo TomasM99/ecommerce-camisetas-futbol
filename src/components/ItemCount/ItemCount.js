@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './ItemCount.scss';
 
-function ItemCount({stock}) {
+function ItemCount({stock, setCantidadSeleccionada}) {
     const [counter, setCounter] = useState(1);
     
     function addCounter(){
@@ -15,6 +15,10 @@ function ItemCount({stock}) {
             setCounter(counter - 1);
         }
     }
+
+    function onAdd(){
+        setCantidadSeleccionada(counter);
+    }
     
 
     return (
@@ -25,7 +29,7 @@ function ItemCount({stock}) {
                 <button className="btn btn-outline-dark cart-button" onClick={addCounter}>+</button>
             </div>
             <div>
-                <button type="button" className="btn btn-outline-dark cart-button">Agregar al carrito</button>
+                <button type="button" className="btn btn-outline-dark cart-button" onClick={onAdd}>Agregar al carrito</button>
             </div>
         </div>
     );

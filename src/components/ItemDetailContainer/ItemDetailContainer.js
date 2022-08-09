@@ -4,7 +4,7 @@ import './ItemDetailContainer.scss';
 import ItemDetail from '../ItemDetail/ItemDetail';
 import products from '../../utils/products';
 
-function ItemDetailContainer({division}) {
+function ItemDetailContainer() {
 
     const [item, setItem] = useState({});
     const {id} = useParams();
@@ -29,7 +29,6 @@ function ItemDetailContainer({division}) {
 
     return (
         <div>
-            <h2>{division}</h2>
             {Object.keys(item).length > 0 && <ItemDetail data={item}/>}
         </div>
     );

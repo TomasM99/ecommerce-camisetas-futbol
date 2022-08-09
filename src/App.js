@@ -5,6 +5,7 @@ import Productos from './pages/Productos';
 import Nosotros from './pages/Nosotros';
 import Detalle from './pages/Detalle';
 import Categoria from './pages/Categoria';
+import Checkout from './pages/Checkout';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/nosotros" element={<Nosotros />}/>
           <Route path="/item/:id" element={<Detalle />}/>
           <Route path="/category/:category" element={<Categoria />}/>
+          <Route path="/cart" element={<Checkout />}/>
           <Route path="*" element={<h1>ERROR 404</h1>}/>
         </Routes>
         <footer>Footer a desarrollar</footer>

@@ -2,7 +2,7 @@ import ItemDetailContainer from "../components/ItemDetailContainer/ItemDetailCon
 
 const Detalle = () => {
     return(
-        <ItemDetailContainer division="Detalle de producto"/>
+        <ItemDetailContainer />
     )
 }
 
