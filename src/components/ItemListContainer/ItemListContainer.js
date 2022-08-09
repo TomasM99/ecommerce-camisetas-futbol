@@ -27,7 +27,7 @@ function ItemListContainer({division}) {
         }).catch((error) => {
             console.log("No se pudieron cargar los productos")
         })
-    }, [])
+    }, [category])
 
     return (
         <div className='seccion-items'>
