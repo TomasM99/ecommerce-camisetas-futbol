@@ -19,7 +19,7 @@ function ItemCount({stock, setCantidadSeleccionada, data}) {
     }
 
     function onAdd(){
-        addItem(data);
+        addItem(data, counter);
         setCantidadSeleccionada(counter);
     }
     
