@@ -17,7 +17,7 @@ function ItemDetail({data}) {
             <p><strong>${precio}</strong></p>
             {cantidadSeleccionada > 0 ? 
             <button type="button" className="btn btn-outline-dark"><Link to="/cart">Terminar Compra</Link></button>
-            : <ItemCount stock={stock} setCantidadSeleccionada={setCantidadSeleccionada}/>}
+            : <ItemCount stock={stock} setCantidadSeleccionada={setCantidadSeleccionada} data={data}/>}
         </div>
     );
 }

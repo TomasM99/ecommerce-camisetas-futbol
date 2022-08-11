@@ -1,7 +1,9 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+import { CartContext } from '../../context/CartContext';
 import './ItemCount.scss';
 
-function ItemCount({stock, setCantidadSeleccionada}) {
+function ItemCount({stock, setCantidadSeleccionada, data}) {
+    const {addItem} = useContext(CartContext);
     const [counter, setCounter] = useState(1);
     
     function addCounter(){
@@ -17,6 +19,7 @@ function ItemCount({stock, setCantidadSeleccionada}) {
     }
 
     function onAdd(){
+        addItem(data);
         setCantidadSeleccionada(counter);
     }
     
