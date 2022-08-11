@@ -1,0 +1,13 @@
+.carrito{
+    display: flex;
+    align-items: center;
+    .carrito-cant{
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        color: white;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+    }
+}

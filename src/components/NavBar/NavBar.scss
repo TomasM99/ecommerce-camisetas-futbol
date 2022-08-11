@@ -2,11 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     box-shadow: 1px 3px 5px #cac8c8;
-    .carrito{
-        margin-right: 2.5%;
-    }
     .navegador-menu{
         display: flex;
         justify-content: center;
@@ -26,9 +22,13 @@
 }
 .logo{
     margin-left: 2.5%;
-        padding-top: 1%;
-        padding-bottom: 1%;
-        height: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    height: 100%;
+}
+.carrito{
+    margin-right: 2.5%;
+    padding-top: 1% 0 1% 0;
 }
 
 .categorias{

@@ -25,7 +25,7 @@ function ItemDetailContainer() {
         }).catch((error) => {
             console.log("No se pudieron cargar los productos")
         })
-    }, [])
+    }, [id])
 
     return (
         <div>

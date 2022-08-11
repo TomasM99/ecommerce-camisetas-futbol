@@ -12,7 +12,7 @@ function NavBar() {
                     <Link to="/productos" className='navegador-item'><li><button>Productos</button></li></Link>
                     <Link to="/nosotros" className='navegador-item'><li><button>Nosotros</button></li></Link>
                 </ul>
-                <CartWidget />
+                <CartWidget className='carrito'/>
             </div>
             <div className='categorias'>
                 <ul className='categorias-lista'>
