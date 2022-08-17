@@ -6,8 +6,11 @@
     margin: 1% 5% 1% 5%;
     padding: 1% 5% 1% 1%;
     border-radius: 10px;
-    img{
+    .imagen-cart{
         height: 100px;
+    }
+    .basura-cart{
+        cursor: pointer;
     }
     &:hover{
         border: 1px solid black;

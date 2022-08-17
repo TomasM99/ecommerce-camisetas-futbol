@@ -6,8 +6,9 @@ const CartProvider = ({children}) => {
     const [productosCart, setProductosCart] = useState([]);
     const [total, setTotal] = useState(0);
 
-    function removeItem(id){
+    function removeItem(id, cantidad){
         setProductosCart(productosCart.filter( (producto) => producto.id !== id));
+        setTotal(total - cantidad);
     }
     function addItem(producto, cantidad){
         let isInCart = productosCart.find(product => product.id === producto.id);

@@ -4,4 +4,26 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    .contenedor-total-cart{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 1px 3px 5px #dfdfdf;
+        margin: 1% 5% 1% 5%;
+        padding: 1% 5% 1% 1%;
+        border-radius: 10px;
+        .total-cart{
+            display: flex;
+            width: 40%;
+            p{
+                padding: 3% 10% 3% 10%;
+            }
+        }
+        img{
+            cursor: pointer;
+        }
+        &:hover{
+            border: 1px solid black;
+        }
+    }
 }
