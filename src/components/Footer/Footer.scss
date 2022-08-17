@@ -1,0 +1,24 @@
+.contenedor-footer{
+    background-color: rgb(185, 185, 185);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: -1px -3px 5px #c0bfbf;
+    div{
+        margin: 0% 5% 0% 5%;
+        padding: 2% 0% 1.5% 0%;
+        p{
+            font-weight: bolder;
+            font-size: 18px;
+        }
+    }
+    .redes-footer{
+        width: 15%;
+        img{
+            margin: 0% 4% 0% 4%;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,5 +1,6 @@
 import './App.scss';
 import NavBar from './components/NavBar/NavBar.js';
+import Footer from './components/Footer/Footer';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Home from './pages/Home';
 import Productos from './pages/Productos';
@@ -23,7 +24,7 @@ function App() {
             <Route path="/cart" element={<Checkout />}/>
             <Route path="*" element={<h1>ERROR 404</h1>}/>
           </Routes>
-          <footer>Footer a desarrollar</footer>
+          <Footer />
       </BrowserRouter>
     </CartProvider>
   );
