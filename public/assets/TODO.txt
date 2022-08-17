@@ -1,0 +1,10 @@
+-Sacar las categorias del producto del navbar y ponerlos como un desplegable de productos
+-Agregar contenido a la home y pasar los productos a su seccion
+-Agregar contenido en nosotros
+-Agregar foto cuando esta el error 404
+-Cambiar diseños generales todavia a definir (tipografia nueva, colores, otro formato de tarjetas y mas)
+-Cambiar el contenido del carrito cuando esta vacio
+-Agregar alguna libreria para notificar correctamente cada vez que agregamos algo al carrito
+-Agregar mas productos
+-Cambiar totalmente el diseño del item detail, agregar algun modal cuando tocamos la foto
+-Agregar algun spinner de carga
