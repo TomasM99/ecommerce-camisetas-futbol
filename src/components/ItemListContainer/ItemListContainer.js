@@ -2,30 +2,34 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './ItemListContainer.scss';
 import ItemList from '../ItemList/ItemList';
-import products from '../../utils/products';
+import { collection, getDocs} from "firebase/firestore"
+import db from '../../utils/firebaseConfig';
 
 function ItemListContainer({division}) {
 
     const [listaProductos, setListaProductos] = useState([]);
     const {category} = useParams();
 
-    const filterProducts = products.filter((product) => product.categoria === category);
-
-    const getProductos = new Promise((resolve, reject) => {
-        setTimeout( () => {
-            if(category){
-                resolve(filterProducts);
-            }else{
-                resolve(products)
-            }
-        }, 500)
-    });
+    const getProductos = async() => {
+        const productCollection = collection(db, 'productos');
+        const productSnapshot = await getDocs(productCollection);
+        const productList = productSnapshot.docs.map( (doc) => {
+            let product = doc.data();
+            product.id = doc.id;
+            return product;
+        });
+        if(category){
+            return productList.filter((product) => product.categoria === category);
+        }else{
+            return productList;
+        }
+    }
 
     useEffect( () => {
-        getProductos.then((res) => {
+        getProductos().then((res) => {
             setListaProductos(res);
         }).catch((error) => {
-            console.log("No se pudieron cargar los productos")
+            console.log("No se pudieron cargar los productos");
         })
     }, [category])
 

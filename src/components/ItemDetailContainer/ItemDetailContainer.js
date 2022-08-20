@@ -2,28 +2,28 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './ItemDetailContainer.scss';
 import ItemDetail from '../ItemDetail/ItemDetail';
-import products from '../../utils/products';
+import db from '../../utils/firebaseConfig';
+import { doc, getDoc } from "firebase/firestore"
 
 function ItemDetailContainer() {
 
     const [item, setItem] = useState({});
     const {id} = useParams();
 
-    const getItem = new Promise((resolve, reject) => {
-        setTimeout( () => {
-            resolve(filterItem())
-        }, 500)
-    });
-
-    function filterItem(){
-        return products[parseInt(id) - 1];
+    const getItem = async() => {
+        const docRef = doc(db, 'productos', id);
+        const docSnapshot = await getDoc(docRef);
+        let product = docSnapshot.data();
+        product.id = docSnapshot.id;
+        console.log(product);
+        return product;
     }
 
     useEffect( () => {
-        getItem.then((res) => {
+        getItem().then((res) => {
             setItem(res);
         }).catch((error) => {
-            console.log("No se pudieron cargar los productos")
+            console.log("No se pudieron cargar los productos");
         })
     }, [id])
 

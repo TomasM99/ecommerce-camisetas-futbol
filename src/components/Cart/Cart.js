@@ -14,7 +14,7 @@ function Cart() {
             {productosCart.map((producto) => {return <ItemCart key={producto.id} data={producto} />})}
             <div className='contenedor-total-cart'>
                 <div className='total-cart'>
-                    <p><strong>Total a pagar: </strong>{totalPagar}</p>
+                    <p><strong>Total a pagar: </strong>${totalPagar}</p>
                     <p><strong>Cantidad: </strong>{total}</p>
                 </div>
                 <img src={`/assets/trash.png`} alt="Tachito" className='basura-cart' onClick={clear}/>

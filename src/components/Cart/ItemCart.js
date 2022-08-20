@@ -16,7 +16,7 @@ function ItemCart({data}) {
             <p><strong>Producto: </strong>{nombre}</p>
             <p><strong>Precio: </strong>${precio}</p>
             <p><strong>Cantidad: </strong>{cantidad}</p>
-            <p><strong>Total: </strong>{cantidad*precio}</p>
+            <p><strong>Total: </strong>${cantidad*precio}</p>
             <img src={`/assets/trash.png`} alt="Tachito" className='basura-cart' onClick={sacarItem}/>
         </div>
     );
