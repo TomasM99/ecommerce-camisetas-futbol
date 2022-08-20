@@ -2,6 +2,8 @@ import './App.scss';
 import NavBar from './components/NavBar/NavBar.js';
 import Footer from './components/Footer/Footer';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import { ToastContainer, Flip} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Home from './pages/Home';
 import Productos from './pages/Productos';
 import Nosotros from './pages/Nosotros';
@@ -25,6 +27,7 @@ function App() {
             <Route path="*" element={<h1>ERROR 404</h1>}/>
           </Routes>
           <Footer />
+          <ToastContainer transition={Flip}/>
       </BrowserRouter>
     </CartProvider>
   );

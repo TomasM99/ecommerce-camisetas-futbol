@@ -1,6 +1,8 @@
 import './ItemCart.scss';
 import { useContext } from 'react';
 import { CartContext } from '../../context/CartContext';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function ItemCart({data}) {
     const {removeItem} = useContext(CartContext);
@@ -8,6 +10,19 @@ function ItemCart({data}) {
 
     function sacarItem(){
         removeItem(id, parseInt(cantidad));
+        avisarConfirmacion("Producto retirado!");
+    }
+
+    function avisarConfirmacion(mensaje){
+        toast.warn(mensaje, {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined
+            });
     }
 
     return (
