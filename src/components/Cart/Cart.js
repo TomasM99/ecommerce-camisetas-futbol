@@ -10,16 +10,14 @@ function Cart() {
     const [showModal, setShowModal] = useState(false);
     const [orden, setOrden] = useState({
         items: [],
-        buyer: {
-
-        },
+        buyer: {},
         total: 0,
         date: new Date()
     })
     const [dataForm, setDataForm] = useState({
-        name: '',
-        phone: '',
-        email: ''
+        name: "",
+        phone: "",
+        email: ""
     })
 
     const {productosCart, total, clear} = useContext(CartContext);
@@ -39,7 +37,7 @@ function Cart() {
     }
 
     function handleChange(e){
-        console.log(e.target.value);
+        setDataForm({...dataForm, [e.target.name] : e.target.value})
     }
 
     return (
