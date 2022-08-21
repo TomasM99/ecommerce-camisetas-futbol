@@ -32,7 +32,6 @@ const CartProvider = ({children}) => {
         clear,
         removeItem,
     }
-    console.log(productosCart);
 
     return(
         <CartContext.Provider value={data}>

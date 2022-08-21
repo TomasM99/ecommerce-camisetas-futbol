@@ -15,7 +15,6 @@ function ItemDetailContainer() {
         const docSnapshot = await getDoc(docRef);
         let product = docSnapshot.data();
         product.id = docSnapshot.id;
-        console.log(product);
         return product;
     }
 

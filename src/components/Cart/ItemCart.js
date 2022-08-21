@@ -16,7 +16,7 @@ function ItemCart({data}) {
     function avisarConfirmacion(mensaje){
         toast.warn(mensaje, {
             position: "top-right",
-            autoClose: 3000,
+            autoClose: 1000,
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,

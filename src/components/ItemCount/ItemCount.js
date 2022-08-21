@@ -29,7 +29,7 @@ function ItemCount({stock, setCantidadSeleccionada, data}) {
     function avisarConfirmacion(mensaje){
         toast.info(mensaje, {
             position: "top-right",
-            autoClose: 3000,
+            autoClose: 1000,
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,
