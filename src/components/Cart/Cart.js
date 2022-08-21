@@ -5,24 +5,32 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ItemCart from './ItemCart';
 import Modal from '../Modal/Modal';
+import db from '../../utils/firebaseConfig';
+import { collection, addDoc } from 'firebase/firestore'
 
 function Cart() {
+    const {productosCart, total, clear} = useContext(CartContext);
+    let totalPagar = productosCart.map(prod => (prod.cantidad * prod.precio)).reduce((prev, curr) => prev + curr, 0);
+
     const [showModal, setShowModal] = useState(false);
-    const [orden, setOrden] = useState({
-        items: [],
-        buyer: {},
-        total: 0,
-        date: new Date()
-    })
     const [dataForm, setDataForm] = useState({
         name: "",
         phone: "",
         email: ""
     })
-
-    const {productosCart, total, clear} = useContext(CartContext);
-
-    let totalPagar = productosCart.map(prod => (prod.cantidad * prod.precio)).reduce((prev, curr) => prev + curr, 0);
+    const [orden, setOrden] = useState({
+        items: productosCart.map((pro) => {
+            return {
+                id: pro.id,
+                tittle: pro.nombre,
+                price: pro.precio,
+                quantity: pro.cantidad
+            }
+        }),
+        buyer: {},
+        total: totalPagar,
+        date: new Date()
+    })
 
     function avisarConfirmacion(mensaje){
         toast.warn(mensaje, {
@@ -38,6 +46,15 @@ function Cart() {
 
     function handleChange(e){
         setDataForm({...dataForm, [e.target.name] : e.target.value})
+    }
+    function handleSubmit(e){
+        e.preventDefault();
+        storeOrder({...orden, buyer: dataForm});
+    }
+    const storeOrder = async (newOrder) => {
+        const collectionOrder = collection(db, 'ordenes');
+        const orderDoc = await addDoc(collectionOrder, newOrder);
+        console.log('ORDEN LISTA', orderDoc);
     }
 
     return (
@@ -57,7 +74,7 @@ function Cart() {
             <button onClick={() => setShowModal(true)}>Terminar compra</button>
             {showModal &&
                 <Modal title={"Datos de contacto"} close={() => setShowModal()}>
-                    <form>
+                    <form onSubmit={handleSubmit}>
                         <input 
                             type='text' 
                             name='name' 
@@ -79,7 +96,7 @@ function Cart() {
                             onChange={handleChange}
                             value={dataForm.email}
                         />
-                        <button type='submit'>Realizar compra</button>
+                        <button type="submit">Realizar compra</button>
                     </form>
                 </Modal>
             }
