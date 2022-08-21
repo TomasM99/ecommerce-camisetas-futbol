@@ -7,4 +7,5 @@
 -Agregar alguna libreria para notificar correctamente cada vez que agregamos algo al carrito
 -Agregar mas productos a firestore (Al menos 5 selecciones distintas mas, 10 clubes argentinos distintos mas, 10 clubes europeos distintos mas)
 -Cambiar totalmente el diseño del item detail
--Agregar algun spinner de carga
+-Agregar algun spinner de carga en donde sea necesario (ordenes, comienzo, etc)
+-Modificar todo el diseño del modal y del formulario

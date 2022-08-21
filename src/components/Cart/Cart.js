@@ -13,6 +13,8 @@ function Cart() {
     let totalPagar = productosCart.map(prod => (prod.cantidad * prod.precio)).reduce((prev, curr) => prev + curr, 0);
 
     const [showModal, setShowModal] = useState(false);
+    const [success, setSuccess] = useState();
+
     const [dataForm, setDataForm] = useState({
         name: "",
         phone: "",
@@ -54,7 +56,7 @@ function Cart() {
     const storeOrder = async (newOrder) => {
         const collectionOrder = collection(db, 'ordenes');
         const orderDoc = await addDoc(collectionOrder, newOrder);
-        console.log('ORDEN LISTA', orderDoc);
+        setSuccess(orderDoc.id);
     }
 
     return (
@@ -74,7 +76,13 @@ function Cart() {
             <button onClick={() => setShowModal(true)}>Terminar compra</button>
             {showModal &&
                 <Modal title={"Datos de contacto"} close={() => setShowModal()}>
-                    <form onSubmit={handleSubmit}>
+                    {success ? (
+                        <>
+                            <h2>Orden generada</h2>
+                            <p>Orden con ID: {success}</p>
+                        </>
+                    ) : (
+                        <form onSubmit={handleSubmit}>
                         <input 
                             type='text' 
                             name='name' 
@@ -98,6 +106,7 @@ function Cart() {
                         />
                         <button type="submit">Realizar compra</button>
                     </form>
+                    )}
                 </Modal>
             }
         </div>
