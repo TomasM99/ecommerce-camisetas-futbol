@@ -4,12 +4,14 @@ import Footer from './components/Footer/Footer';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import { ToastContainer, Flip} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/Home';
 import Productos from './pages/Productos';
 import Nosotros from './pages/Nosotros';
 import Detalle from './pages/Detalle';
 import Categoria from './pages/Categoria';
 import Checkout from './pages/Checkout';
+import Error404 from './pages/Error404';
 import CartProvider from './context/CartContext';
 
 function App() {
@@ -24,7 +26,7 @@ function App() {
             <Route path="/item/:id" element={<Detalle />}/>
             <Route path="/category/:category" element={<Categoria />}/>
             <Route path="/cart" element={<Checkout />}/>
-            <Route path="*" element={<h1>ERROR 404</h1>}/>
+            <Route path="*" element={<Error404 />}/>
           </Routes>
           <Footer />
           <ToastContainer transition={Flip}/>

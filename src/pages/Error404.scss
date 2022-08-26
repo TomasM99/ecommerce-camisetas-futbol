@@ -1,0 +1,14 @@
+.contenedor-404{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .texto-404{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 5%;
+    }
+    .imagen-404{
+        padding-bottom: 3%;
+    }
+}

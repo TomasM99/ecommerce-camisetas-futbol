@@ -12,10 +12,20 @@
         .navegador-item{
             padding-left: 5%;
             padding-right: 5%;
-            button{
+            .boton-normal{
                 background: none;
                 border: none;
                 font-size: 20px;
+            }
+            .boton-desplegable{
+                background: none;
+                border: none;
+                font-size: 20px;
+                button{
+                    background: none;
+                    border: none;
+                    font-size: 15px;
+                }
             }
         }
     }
@@ -29,23 +39,4 @@
 .carrito{
     margin-right: 2.5%;
     padding-top: 1% 0 1% 0;
-}
-
-.categorias{
-    margin: 2% 2%;
-    .categorias-lista{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .categoria-item{
-            list-style: none;
-            margin: 0 1.5% 0 1.5%;
-            button{
-                background: none;
-                border: 1px solid black;
-                border-radius: 5px;
-                font-size: 20px;
-            }
-        }
-    }
 }

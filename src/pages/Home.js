@@ -1,10 +1,6 @@
-import ItemListContainer from "../components/ItemListContainer/ItemListContainer"
-
 const Home = () => {
     return(
-        <section>
-            <ItemListContainer division="Productos disponibles"/>
-        </section>
+        <h1>Home a desarrollar</h1>
     )
 }
 

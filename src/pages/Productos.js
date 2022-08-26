@@ -1,6 +1,10 @@
+import ItemListContainer from "../components/ItemListContainer/ItemListContainer"
+
 const Productos = () => {
     return(
-        <h1>Productos</h1>
+        <section>
+            <ItemListContainer division="Productos disponibles"/>
+        </section>
     )
 }
 
