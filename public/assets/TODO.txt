@@ -1,7 +1,7 @@
 FALTA HACER
 -Agregar contenido a la home
 -Agregar contenido en nosotros
--Agregar mas productos a firestore (Al menos 5 selecciones distintas mas, 10 clubes argentinos distintos mas, 10 clubes europeos distintos mas)
+-Agregar mas productos a firestore (10 clubes europeos distintos mas)
 
 -Cambiar el contenido del carrito cuando esta vacio
 -Cambiar diseños generales todavia a definir (tipografia nueva, colores, otro formato de tarjetas y mas)
