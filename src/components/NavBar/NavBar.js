@@ -8,9 +8,9 @@ function NavBar() {
         <div className='navegador'>
             <Link to="/" className='logo'><img src="/assets/logo.png" alt="Logo"/></Link>
             <ul className='navegador-menu'>
-                <Link to="/" className='navegador-item'><li><button className='boton-normal'>Home</button></li></Link>
+                <Link to="/" className='navegador-item'><li><button className='boton-normal'>HOME</button></li></Link>
                 <Link to="" className='navegador-item'><li><button className='boton-desplegable'><DeplegableProductos /></button></li></Link>
-                <Link to="/nosotros" className='navegador-item'><li><button className='boton-normal'>Nosotros</button></li></Link>
+                <Link to="/nosotros" className='navegador-item'><li><button className='boton-normal'>NOSOTROS</button></li></Link>
             </ul>
             <CartWidget className='carrito'/>
         </div>

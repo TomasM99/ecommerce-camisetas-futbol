@@ -2,13 +2,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 2%;
+    .titulo-404{
+        font-size: 50px;
+    }
     .texto-404{
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 3% 0% 3% 0%;
+        font-size: x-large;
     }
     .imagen-404{
         padding-bottom: 3%;
+    }
+    .boton-404{
+        font-size: x-large;
+        padding: 0% 40px 0% 40px;
     }
 }

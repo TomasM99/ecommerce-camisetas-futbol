@@ -2,13 +2,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: x-large;
+    .titulo-vacio{
+        font-size: 50px;
+    }
     .texto-vacio{
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 3% 0% 3% 0%;
+        font-size: x-large;
     }
     .imagen-vacio{
         padding-bottom: 3%;
+    }
+    .boton-vacio{
+        font-size: x-large;
+        padding: 0% 40px 0% 40px;
     }
 }

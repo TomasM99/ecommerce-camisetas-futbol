@@ -12,14 +12,14 @@ const Checkout = () => {
             {total === 0 && (
                 <section className='contenedor-vacio'>
                     <div className='texto-vacio'>
-                        <h1>Carrito vacío!</h1>
+                        <h1 className='titulo-vacio'>Carrito vacío!</h1>
                         <p>Momento de empezar a hacer el pedido.</p>
                     </div>
                     <div className='imagen-vacio'>
                         <img src="/assets/carrito-vacio.png" alt="Error 404"/>
                     </div>
                     <div>
-                        <Link to="/productos"><button className="btn btn-outline-dark">Ir a Comprar</button></Link>
+                        <Link to="/productos"><button className="btn btn-outline-dark boton-vacio">Ir a Comprar</button></Link>
                     </div>
                 </section>
             )}
