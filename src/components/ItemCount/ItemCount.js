@@ -45,6 +45,7 @@ function ItemCount({stock, setCantidadSeleccionada, data}) {
                 <p>{counter}</p>
                 <button className="btn btn-outline-dark" onClick={addCounter}>+</button>
             </div>
+            <p className=''>stock: {stock}</p>
             <div>
                 <button type="button" className="btn btn-outline-dark carrito-button" onClick={onAdd}>Agregar al carrito</button>
             </div>

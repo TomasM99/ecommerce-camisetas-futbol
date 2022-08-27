@@ -3,7 +3,6 @@ FALTA HACER
 -Agregar contenido en nosotros
 
 -Cambiar diseño del carrito con productos
-
 -Agregar algun spinner de carga en donde sea necesario (ordenes, comienzo, etc)
 -Modificar todo el diseño del modal y del formulario
 -Agregar confirmacion de compra con toastify
@@ -12,8 +11,5 @@ FALTA HACER
 -Agregar la informacion del proyecto al archivo README, librerias, deploy, explicacion + GIF de recorrido por la pagina
 -Subir pagina a github pages (Cuando sea la version final)
 
-FALTA ACOMODAR
-
-
 SI HAY TIEMPO
--Pagina de favoritos, cada item que tanga un icono de diamante que podemos clickear y se guarda en favoritos.
+-Parte de favoritos: Falta hacer la logica con algun contexto y mostrar el icono correcto dependiendo si esta guardado en favoritos o no.
