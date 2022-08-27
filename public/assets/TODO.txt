@@ -4,11 +4,11 @@ FALTA HACER
 -Agregar mas productos a firestore (10 clubes europeos distintos mas)
 
 -Cambiar diseños generales todavia a definir (colores, otro formato de tarjetas y mas)
--Cambiar totalmente el diseño del item detail
 
 -Agregar algun spinner de carga en donde sea necesario (ordenes, comienzo, etc)
 -Modificar todo el diseño del modal y del formulario
 -Agregar confirmacion de compra con toastify
+-Corregir bugs en el momento de compra
 
 -Agregar la informacion del proyecto al archivo README, librerias, deploy, explicacion + GIF de recorrido por la pagina
 -Subir pagina a github pages (Cuando sea la version final)

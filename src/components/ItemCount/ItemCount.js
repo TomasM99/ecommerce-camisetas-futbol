@@ -41,12 +41,12 @@ function ItemCount({stock, setCantidadSeleccionada, data}) {
     return (
         <div className='card-buttons'>
             <div className='controler'>
-                <button className="btn btn-outline-dark cart-button" onClick={susCounter}>-</button>
+                <button className="btn btn-outline-dark" onClick={susCounter}>-</button>
                 <p>{counter}</p>
-                <button className="btn btn-outline-dark cart-button" onClick={addCounter}>+</button>
+                <button className="btn btn-outline-dark" onClick={addCounter}>+</button>
             </div>
             <div>
-                <button type="button" className="btn btn-outline-dark cart-button" onClick={onAdd}>Agregar al carrito</button>
+                <button type="button" className="btn btn-outline-dark carrito-button" onClick={onAdd}>Agregar al carrito</button>
             </div>
         </div>
     );

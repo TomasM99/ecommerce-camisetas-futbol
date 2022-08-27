@@ -11,13 +11,25 @@ function ItemDetail({data}) {
 
     return (
         <div className='detalle'>
-            <img src={`/assets/${imagen}`} alt="Producto"/>
-            <p>{nombre}</p>
-            <p>{descripcion}</p>
-            <p><strong>${precio}</strong></p>
-            {cantidadSeleccionada > 0 ? 
-            <button type="button" className="btn btn-outline-dark"><Link to="/cart">Terminar Compra</Link></button>
-            : <ItemCount stock={stock} setCantidadSeleccionada={setCantidadSeleccionada} data={data}/>}
+            <div className='detalle-imagen'>
+                <img src="/assets/d-favorito-vacio.png" alt="Facebook" className='favorito'/>
+                <img src={`/assets/${imagen}`} alt="Producto" className='detalle-foto'/>
+            </div>
+            <div className='detalle-info'>
+                <h1>{nombre}</h1>
+                <h2>Sobre el producto:</h2>
+                <p className='detalle-descripcion'>{descripcion}</p>
+                <p className='detalle-precio'>${precio}</p>
+                <div className='detalle-boton'>
+                    {cantidadSeleccionada > 0 ? 
+                    <div className='detalle-terminado'>
+                        <button type="button" className="btn btn-outline-dark detalle-boton-interno"><Link to="/productos" className='boton-texto'>Seguir comprando</Link></button>
+                        <button type="button" className="btn btn-outline-dark detalle-boton-interno"><Link to="/cart" className='boton-texto'>Terminar Compra</Link></button>
+                    </div>
+                    : <ItemCount stock={stock} setCantidadSeleccionada={setCantidadSeleccionada} data={data}/>}
+                </div>
+            </div>
+            
         </div>
     );
 }

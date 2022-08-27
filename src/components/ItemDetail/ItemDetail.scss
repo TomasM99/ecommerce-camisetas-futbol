@@ -1,16 +1,66 @@
 .detalle{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 22%;
-    margin: 2.5% 0% 1.5% 2.5%;
-    height: 100%;
-    box-shadow: 1px 3px 5px #ebeaea;
-    padding: 1%;
-    img{
-        width: 100%;
+    justify-content: center;
+    width: 100%;
+    padding: 2% 0% 3% 0%;
+    .detalle-imagen{
+        display: flex;
+        justify-content: center;
+        box-shadow: 1px 3px 5px #ebeaea;
+        width: 40%;
+        .detalle-foto{
+            width: 100%;
+        }
     }
-    &:hover{
-        border: 1px solid black;
+    .detalle-info{
+        padding-left: 5%;
+        width: 35%;
+        h1{
+            font-size: 35px;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 5%;
+            border-bottom: 1px solid rgb(0, 0, 0);
+        }
+        h2{
+            font-size: 30px;
+        }
+        .detalle-descripcion{
+            font-size: 20px;
+            height: 25%;
+        }
+        .detalle-precio{
+            text-align: center;
+            font-size: 40px;
+            border-bottom: 1px solid rgb(0, 0, 0);
+            padding-bottom: 5%;
+        }
+        .detalle-boton{
+            border-bottom: 1px solid rgb(0, 0, 0);
+            .detalle-boton-interno{
+                font-size: 20px;
+                border: 1px solid black;
+                border-radius: 0%;
+                .boton-texto{
+                    text-decoration: none;
+                    color: black;
+                    &:hover{
+                        color: white;
+                    }
+                }
+            }
+            .detalle-terminado{
+                display: flex;
+                justify-content: space-around;
+                margin-bottom: 5%;
+            }
+        }
     }
+}
+.favorito{
+    z-index: 5;
+    position: absolute;
+    top: 18%;
+    left: 48%;
+    cursor: pointer;
 }
