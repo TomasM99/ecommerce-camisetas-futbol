@@ -8,6 +8,14 @@
         justify-content: center;
         box-shadow: 1px 3px 5px #ebeaea;
         width: 40%;
+        position: relative;
+        .favorito{
+            z-index: 5;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
         .detalle-foto{
             width: 100%;
         }
@@ -56,11 +64,4 @@
             }
         }
     }
-}
-.favorito{
-    z-index: 5;
-    position: absolute;
-    top: 18%;
-    left: 48%;
-    cursor: pointer;
 }
