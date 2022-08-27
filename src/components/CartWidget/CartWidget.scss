@@ -1,14 +1,18 @@
 .carrito{
     display: flex;
     align-items: center;
-    .carrito-cant{
-        display: flex;
-        justify-content: center;
+    .carrito-cant-container{
         background-color: black;
         color: white;
         border-radius: 50%;
         width: 25px;
         height: 25px;
-        font-size: 19px;
+        position: relative;
+        .carrito-cant{
+            position: absolute;
+            top: 0%;
+            right: 35%;
+            font-size: 19px;
+        }
     }
 }

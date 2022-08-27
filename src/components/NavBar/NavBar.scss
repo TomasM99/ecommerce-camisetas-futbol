@@ -21,10 +21,15 @@
                 background: none;
                 border: none;
                 font-size: 25px;
+                .desplegable-container:active{
+                    background-color: #bebebe;
+                }
                 button{
+                    margin: 0;
                     background: none;
                     border: none;
                     font-size: 20px;
+                    width: 100%;
                 }
             }
         }

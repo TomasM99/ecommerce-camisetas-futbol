@@ -1,17 +1,30 @@
 .tarjeta{
-    width: 22%;
-    margin: 2.5% 0% 1.5% 2.5%;
-    height: 100%;
+    width: 21%;
+    margin: 2.5% 1.5% 1.5% 1.5%;
     box-shadow: 1px 3px 5px #ebeaea;
     padding: 1%;
     .items-tarjeta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         text-decoration: none;
         color: black;
         img{
             width: 100%;
         }
+        .nombre-tarjeta{
+            margin-top: 5%;
+            font-size: 20px;
+        }
+        .precio-tarjeta{
+            font-size: 23px;
+        }
     }
-    &:hover{
-        border: 1px solid black;
+    &.grow {
+        transition: all .2s ease-in-out;
+        &:hover {
+            transform: scale(1.05);
+            border: 1px solid black;
+        }
     }
 }

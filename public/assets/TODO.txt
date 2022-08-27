@@ -1,9 +1,7 @@
 FALTA HACER
 -Agregar contenido a la home
 -Agregar contenido en nosotros
--Agregar mas productos a firestore (10 clubes europeos distintos mas)
 
--Cambiar diseño de tarjetas de inicio
 -Cambiar diseño del carrito con productos
 
 -Agregar algun spinner de carga en donde sea necesario (ordenes, comienzo, etc)
