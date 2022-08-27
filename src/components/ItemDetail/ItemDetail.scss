@@ -9,12 +9,19 @@
         box-shadow: 1px 3px 5px #ebeaea;
         width: 40%;
         position: relative;
-        .favorito{
+        .favorito-vacio{
             z-index: 5;
             position: absolute;
             top: 10px;
             right: 10px;
             cursor: pointer;
+        }
+        .favorito-marcado{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            z-index: -1;
         }
         .detalle-foto{
             width: 100%;
@@ -49,13 +56,6 @@
                 font-size: 20px;
                 border: 1px solid black;
                 border-radius: 0%;
-                .boton-texto{
-                    text-decoration: none;
-                    color: black;
-                    &:hover{
-                        color: white;
-                    }
-                }
             }
             .detalle-terminado{
                 display: flex;

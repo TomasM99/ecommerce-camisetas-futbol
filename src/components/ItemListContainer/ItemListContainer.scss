@@ -1,5 +1,13 @@
-.lista-items{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.seccion-items{
+    margin-top: 2.5%;
+    .titulo-items{
+        margin-left: 4%;
+        font-size: 40px;
+        text-decoration: underline;
+    }
+    .lista-items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }

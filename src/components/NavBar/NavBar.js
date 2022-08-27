@@ -11,6 +11,7 @@ function NavBar() {
                 <Link to="/" className='navegador-item'><li><button className='boton-normal'>HOME</button></li></Link>
                 <Link to="" className='navegador-item'><li><button className='boton-desplegable'><DeplegableProductos /></button></li></Link>
                 <Link to="/nosotros" className='navegador-item'><li><button className='boton-normal'>NOSOTROS</button></li></Link>
+                <Link to="/favoritos" className='navegador-item'><li><button className='boton-normal'>FAVORITOS</button></li></Link>
             </ul>
             <CartWidget className='carrito'/>
         </div>

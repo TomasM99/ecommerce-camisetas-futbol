@@ -1,0 +1,23 @@
+.contenedor-favoritos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: x-large;
+    .titulo-favoritos{
+        font-size: 50px;
+    }
+    .texto-favoritos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3% 0% 3% 0%;
+        font-size: x-large;
+    }
+    .imagen-favoritos{
+        padding-bottom: 3%;
+    }
+    .boton-favoritos{
+        font-size: x-large;
+        padding: 0% 40px 0% 40px;
+    }
+}

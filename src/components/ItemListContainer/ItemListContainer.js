@@ -35,7 +35,16 @@ function ItemListContainer({division}) {
 
     return (
         <div className='seccion-items'>
-            <h2>{division}</h2>
+            {category === 'seleccion' && (
+                <h2 className='titulo-items'>Selecciones</h2>
+            )}
+            {category === 'club-europeo' && (
+                <h2 className='titulo-items'>Clubes Europeos</h2>
+            )}
+            {category === 'club-argentino' && (
+                <h2 className='titulo-items'>Clubes Argentinos</h2>
+            )}
+            <h2 className='titulo-items'>{division}</h2>
             <div className='lista-items'>
                 <ItemList data={listaProductos}/>
             </div>

@@ -9,10 +9,25 @@ function ItemDetail({data}) {
 
     const [cantidadSeleccionada, setCantidadSeleccionada] = useState(0);
 
+    function aniadirFavoritos(){
+        let v = document.getElementById('favorito-v');
+        let m = document.getElementById('favorito-m');
+        v.style.setProperty('z-index', -1);
+        m.style.setProperty('z-index', 5);
+    }
+
+    function sacarFavoritos(){
+        let v = document.getElementById('favorito-v');
+        let m = document.getElementById('favorito-m');
+        v.style.setProperty('z-index', 5);
+        m.style.setProperty('z-index', -1);
+    }
+
     return (
         <div className='detalle'>
             <div className='detalle-imagen'>
-                <img src="/assets/d-favorito-vacio.png" alt="Facebook" className='favorito'/>
+                <img src="/assets/d-favorito-vacio.png" alt="Facebook" id='favorito-v' className='favorito-vacio' onClick={aniadirFavoritos}/>
+                <img src="/assets/d-favorito-marcado.png" alt="Facebook" id='favorito-m' className='favorito-marcado' onClick={sacarFavoritos}/>
                 <img src={`/assets/${imagen}`} alt="Producto" className='detalle-foto'/>
             </div>
             <div className='detalle-info'>
@@ -23,8 +38,8 @@ function ItemDetail({data}) {
                 <div className='detalle-boton'>
                     {cantidadSeleccionada > 0 ? 
                     <div className='detalle-terminado'>
-                        <button type="button" className="btn btn-outline-dark detalle-boton-interno"><Link to="/productos" className='boton-texto'>Seguir comprando</Link></button>
-                        <button type="button" className="btn btn-outline-dark detalle-boton-interno"><Link to="/cart" className='boton-texto'>Terminar Compra</Link></button>
+                        <Link to="/productos"><button type="button" className="btn btn-outline-dark detalle-boton-interno">Seguir comprando</button></Link>
+                        <Link to="/cart"><button type="button" className="btn btn-outline-dark detalle-boton-interno">Terminar Compra</button></Link>
                     </div>
                     : <ItemCount stock={stock} setCantidadSeleccionada={setCantidadSeleccionada} data={data}/>}
                 </div>

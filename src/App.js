@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/Home';
 import Productos from './pages/Productos';
 import Nosotros from './pages/Nosotros';
+import Favoritos from './pages/Favoritos';
 import Detalle from './pages/Detalle';
 import Categoria from './pages/Categoria';
 import Checkout from './pages/Checkout';
@@ -23,6 +24,7 @@ function App() {
             <Route path="/" element={<Home />}/>
             <Route path="/productos" element={<Productos />}/>
             <Route path="/nosotros" element={<Nosotros />}/>
+            <Route path="/favoritos" element={<Favoritos />}/>
             <Route path="/item/:id" element={<Detalle />}/>
             <Route path="/category/:category" element={<Categoria />}/>
             <Route path="/cart" element={<Checkout />}/>
