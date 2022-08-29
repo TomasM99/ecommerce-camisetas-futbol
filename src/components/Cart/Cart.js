@@ -60,20 +60,28 @@ function Cart() {
     }
 
     return (
-        <div className='contenedor-cart'>
-            <h2>Productos en el carrito</h2>
-            {productosCart.map((producto) => {return <ItemCart key={producto.id} data={producto} />})}
-            <div className='contenedor-total-cart'>
-                <div className='total-cart'>
-                    <p><strong>Total a pagar: </strong>${totalPagar}</p>
-                    <p><strong>Cantidad: </strong>{total}</p>
+        <div>
+            <h2>Detalle de Compra</h2>
+            <div className='contenedor-cart'>
+                <div className='contenedor-items-cart'>
+                    <h2>Productos</h2>
+                    {productosCart.map((producto) => {return <ItemCart key={producto.id} data={producto} />})}
                 </div>
-                <img src={`/assets/trash.png`} alt="Tachito" className='basura-cart' onClick={() => {
-                    clear();
-                    avisarConfirmacion("Carrito vaciado!");
-                }}/>
+                <div className='contenedor-total-cart'>
+                    <div className='total-cart'>
+                        <h2>Total</h2>
+                        <p><strong>Total a pagar: </strong>${totalPagar}</p>
+                        <p><strong>Cantidad: </strong>{total}</p>
+                    </div>
+                    <div className='botones-cart'>
+                        <button className='btn btn-outline-dark' onClick={() => {
+                            clear();
+                            avisarConfirmacion("Carrito vaciado!");
+                        }}>Vaciar carrito</button>
+                        <button className='btn btn-outline-dark' onClick={() => setShowModal(true)}>Terminar compra</button>
+                    </div>
+                </div>
             </div>
-            <button onClick={() => setShowModal(true)}>Terminar compra</button>
             {showModal &&
                 <Modal title={"Datos de contacto"} close={() => setShowModal()}>
                     {success ? (

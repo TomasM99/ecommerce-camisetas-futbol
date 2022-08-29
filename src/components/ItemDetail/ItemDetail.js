@@ -3,6 +3,8 @@ import ItemCount from '../ItemCount/ItemCount';
 import { useContext, useState } from 'react';
 import { FavContext } from '../../context/FavContext';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function ItemDetail({data}) {
 
@@ -20,6 +22,7 @@ function ItemDetail({data}) {
         m.classList.add('favorito-vacio');
         m.classList.remove('favorito-marcado');
         agregarFav(data);
+        avisarConfirmacion("Producto agregado a Favoritos!");
     }
 
     function sacarFavoritos(){
@@ -30,6 +33,19 @@ function ItemDetail({data}) {
         m.classList.add('favorito-marcado');
         m.classList.remove('favorito-vacio');
         sacarFav(id);
+        avisarConfirmacion("Producto sacado de Favoritos!");
+    }
+
+    function avisarConfirmacion(mensaje){
+        toast.info(mensaje, {
+            position: "top-right",
+            autoClose: 1000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined
+            });
     }
 
     return (
@@ -61,7 +77,6 @@ function ItemDetail({data}) {
                     : <ItemCount stock={stock} setCantidadSeleccionada={setCantidadSeleccionada} data={data}/>}
                 </div>
             </div>
-            
         </div>
     );
 }

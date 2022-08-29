@@ -2,12 +2,22 @@ import './Favs.scss';
 import { useContext } from 'react';
 import { FavContext } from '../../context/FavContext';
 import Item from '../Item/Item';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Favs = () => {
     const {productosFav, clear} = useContext(FavContext);
 
     function avisarConfirmacion(mensaje){
-        console.log(mensaje);
+        toast.warn(mensaje, {
+            position: "top-right",
+            autoClose: 1000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined
+            });
     }
 
     return(
@@ -16,7 +26,7 @@ const Favs = () => {
                 <h1>Favoritos</h1>
                 <img src={`/assets/trash.png`} alt="Tachito" className='tachito-fav' onClick={() => {
                     clear();
-                    avisarConfirmacion("Carrito vaciado!");
+                    avisarConfirmacion("Favoritos vaciado!");
                 }}/>
             </div>
             <div className='lista-favs'>
