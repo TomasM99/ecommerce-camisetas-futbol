@@ -14,25 +14,28 @@ import Categoria from './pages/Categoria';
 import Checkout from './pages/Checkout';
 import Error404 from './pages/Error404';
 import CartProvider from './context/CartContext';
+import FavProvider from './context/FavContext';
 
 function App() {
   return (
     <CartProvider>
-      <BrowserRouter>
-          <NavBar />
-          <Routes>
-            <Route path="/" element={<Home />}/>
-            <Route path="/productos" element={<Productos />}/>
-            <Route path="/nosotros" element={<Nosotros />}/>
-            <Route path="/favoritos" element={<Favoritos />}/>
-            <Route path="/item/:id" element={<Detalle />}/>
-            <Route path="/category/:category" element={<Categoria />}/>
-            <Route path="/cart" element={<Checkout />}/>
-            <Route path="*" element={<Error404 />}/>
-          </Routes>
-          <Footer />
-          <ToastContainer transition={Flip}/>
-      </BrowserRouter>
+      <FavProvider>
+        <BrowserRouter>
+            <NavBar />
+            <Routes>
+              <Route path="/" element={<Home />}/>
+              <Route path="/productos" element={<Productos />}/>
+              <Route path="/nosotros" element={<Nosotros />}/>
+              <Route path="/favoritos" element={<Favoritos />}/>
+              <Route path="/item/:id" element={<Detalle />}/>
+              <Route path="/category/:category" element={<Categoria />}/>
+              <Route path="/cart" element={<Checkout />}/>
+              <Route path="*" element={<Error404 />}/>
+            </Routes>
+            <Footer />
+            <ToastContainer transition={Flip}/>
+        </BrowserRouter>
+      </FavProvider>
     </CartProvider>
   );
 }

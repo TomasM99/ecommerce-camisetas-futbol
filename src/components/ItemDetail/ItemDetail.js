@@ -1,33 +1,50 @@
 import './ItemDetail.scss';
 import ItemCount from '../ItemCount/ItemCount';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { FavContext } from '../../context/FavContext';
 import { Link } from 'react-router-dom';
 
 function ItemDetail({data}) {
 
-    const {imagen, nombre, precio, descripcion, stock} = data;
+    const {id, imagen, nombre, precio, descripcion, stock} = data;
+
+    const {agregarFav, sacarFav, estaEnFav} = useContext(FavContext);
 
     const [cantidadSeleccionada, setCantidadSeleccionada] = useState(0);
 
     function aniadirFavoritos(){
         let v = document.getElementById('favorito-v');
         let m = document.getElementById('favorito-m');
-        v.style.setProperty('z-index', -1);
-        m.style.setProperty('z-index', 5);
+        v.classList.add('favorito-marcado');
+        v.classList.remove('favorito-vacio');
+        m.classList.add('favorito-vacio');
+        m.classList.remove('favorito-marcado');
+        agregarFav(data);
     }
 
     function sacarFavoritos(){
         let v = document.getElementById('favorito-v');
         let m = document.getElementById('favorito-m');
-        v.style.setProperty('z-index', 5);
-        m.style.setProperty('z-index', -1);
+        v.classList.add('favorito-vacio');
+        v.classList.remove('favorito-marcado');
+        m.classList.add('favorito-marcado');
+        m.classList.remove('favorito-vacio');
+        sacarFav(id);
     }
 
     return (
         <div className='detalle'>
             <div className='detalle-imagen'>
-                <img src="/assets/d-favorito-vacio.png" alt="Facebook" id='favorito-v' className='favorito-vacio' onClick={aniadirFavoritos}/>
-                <img src="/assets/d-favorito-marcado.png" alt="Facebook" id='favorito-m' className='favorito-marcado' onClick={sacarFavoritos}/>
+                {estaEnFav(id) ?
+                <div>
+                    <img src="/assets/d-favorito-marcado.png" alt="Facebook" id='favorito-m' className='favorito-vacio' onClick={sacarFavoritos}/>
+                    <img src="/assets/d-favorito-vacio.png" alt="Facebook" id='favorito-v' className='favorito-marcado' onClick={aniadirFavoritos}/>
+                </div>
+                :
+                <div>
+                    <img src="/assets/d-favorito-marcado.png" alt="Facebook" id='favorito-m' className='favorito-marcado' onClick={sacarFavoritos}/>
+                    <img src="/assets/d-favorito-vacio.png" alt="Facebook" id='favorito-v' className='favorito-vacio' onClick={aniadirFavoritos}/>
+                </div>}
                 <img src={`/assets/${imagen}`} alt="Producto" className='detalle-foto'/>
             </div>
             <div className='detalle-info'>
