@@ -4,12 +4,13 @@ FALTA HACER
 
 -Cambiar diseño del carrito con productos
 -Agregar algun spinner de carga en donde sea necesario (ordenes, comienzo, etc)
--Modificar todo el diseño del modal y del formulario
+-Modificar todo el diseño del modal y del formulario (validaciones y demas)
 -Agregar confirmacion de compra con toastify
 -Corregir bugs en el momento de compra
 
 -Agregar la informacion del proyecto al archivo README, librerias, deploy, explicacion + GIF de recorrido por la pagina
 -Subir pagina a github pages (Cuando sea la version final)
 
-SI HAY TIEMPO
--Parte de favoritos: Falta hacer la logica con algun contexto y mostrar el icono correcto dependiendo si esta guardado en favoritos o no.
+ACOMODAR
+-Cambiar png de defensa y justicia (se ve mal el favoritos)
+-Agregar informacion de favoritos con toastify
