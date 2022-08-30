@@ -46,11 +46,24 @@ function Cart() {
             });
     }
 
+    function avisarCompra(mensaje){
+        toast.success(mensaje, {
+            position: "top-right",
+            autoClose: 1000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined
+            });
+    }
+
     function handleChange(e){
         setDataForm({...dataForm, [e.target.name] : e.target.value})
     }
     function handleSubmit(e){
         e.preventDefault();
+        avisarCompra("Compra realizada!")
         storeOrder({...orden, buyer: dataForm});
     }
     const storeOrder = async (newOrder) => {
@@ -78,7 +91,7 @@ function Cart() {
                             clear();
                             avisarConfirmacion("Carrito vaciado!");
                         }}>Vaciar carrito</button>
-                        <button className='btn btn-outline-dark' onClick={() => setShowModal(true)}>Terminar compra</button>
+                        <button className='btn btn-outline-dark' onClick={() => setShowModal(true)}>Pagar</button>
                     </div>
                 </div>
             </div>
