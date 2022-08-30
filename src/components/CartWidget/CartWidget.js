@@ -8,7 +8,7 @@ function CartWidget() {
 
     return (
         <div className='carrito'>
-            <div className='carrito-cant-container'><p className='carrito-cant'>{total}</p></div>
+            <span className='carrito-cant-container'><p className='carrito-cant'>{total}</p></span>
             <Link to="/cart"><img src="/assets/carrito.png" alt="Carrito"/></Link>
         </div>
     );

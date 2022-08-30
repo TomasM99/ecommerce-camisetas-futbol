@@ -2,7 +2,6 @@ FALTA HACER
 -Agregar contenido a la home
 -Agregar contenido en nosotros
 
--Cambiar diseño del carrito con productos
 -Agregar algun spinner de carga en donde sea necesario (ordenes, comienzo, etc)
 -Modificar todo el diseño del modal y del formulario (validaciones y demas)
 -Agregar confirmacion de compra con toastify

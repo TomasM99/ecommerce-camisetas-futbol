@@ -61,7 +61,7 @@ function Cart() {
 
     return (
         <div>
-            <h2>Detalle de Compra</h2>
+            <h2 className='detalle-compra'>Detalle de Compra</h2>
             <div className='contenedor-cart'>
                 <div className='contenedor-items-cart'>
                     <h2>Productos</h2>

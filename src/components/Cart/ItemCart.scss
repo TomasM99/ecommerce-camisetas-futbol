@@ -1,19 +1,30 @@
-.tarjeta-cart{
+.item-cart{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 1px 3px 5px #dfdfdf;
-    margin: 1% 5% 1% 5%;
-    padding: 1% 5% 1% 1%;
-    border-radius: 10px;
-    .imagen-cart{
-        height: 100px;
+    border-bottom: 1px solid black;
+    margin: 0% 5% 0% 5%;
+    padding: 1% 0% 1% 0%;
+    .info-item{
+        display: flex;
+        width: 100%;
+        .imagen-cart{
+            height: 125px;
+        }
+        .info-item-parrafos{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 1.5%;
+            p{
+                font-size: 20px;
+                margin: 0%;
+            }
+        }
     }
     .basura-cart{
         cursor: pointer;
-    }
-    &:hover{
-        border: 1px solid black;
+        margin-right: 5%;
     }
 }
 

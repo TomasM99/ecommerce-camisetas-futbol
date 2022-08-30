@@ -26,12 +26,16 @@ function ItemCart({data}) {
     }
 
     return (
-        <div className="tarjeta-cart">
-            <img src={`/assets/${imagen}`} alt="Producto" className='imagen-cart'/>
-            <p><strong>Producto: </strong>{nombre}</p>
-            <p><strong>Precio: </strong>${precio}</p>
-            <p><strong>Cantidad: </strong>{cantidad}</p>
-            <p><strong>Total: </strong>${cantidad*precio}</p>
+        <div className="item-cart">
+            <div className='info-item'>
+                <img src={`/assets/${imagen}`} alt="Producto" className='imagen-cart'/>
+                <div className='info-item-parrafos'>
+                    <p><strong>Producto: </strong>{nombre}</p>
+                    <p><strong>Precio: </strong>${precio}</p>
+                    <p><strong>Cantidad: </strong>{cantidad}</p>
+                    <p><strong>Total: </strong>${cantidad*precio}</p>
+                </div>
+            </div>
             <img src={`/assets/trash.png`} alt="Tachito" className='basura-cart' onClick={sacarItem}/>
         </div>
     );
