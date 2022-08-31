@@ -1,23 +1,23 @@
 .contenedor-footer{
-    background-color: rgb(68, 68, 68);
+    background-color: #000;
     position: absolute;
     bottom: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    box-shadow: -1px -3px 5px #c0bfbf;
+    box-shadow: -1px -3px 5px #bfc0c0;
     div{
         margin: 0% 5% 0% 5%;
         padding: 1.5% 0% 1% 0%;
         p{
-            font-weight: bolder;
             font-size: 25px;
-            color: black;
+            color: white;
         }
     }
     .redes-footer{
         width: 15%;
         img{
+            height: 24px;
             margin: 0% 4% 0% 4%;
             cursor: pointer;
         }

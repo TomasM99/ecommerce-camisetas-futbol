@@ -9,5 +9,4 @@ FALTA HACER
 -Subir pagina a github pages (Cuando sea la version final)
 
 ACOMODAR
--Cambiar png de defensa y justicia (se ve mal el favoritos)
 -Corregir bugs en el momento de compra

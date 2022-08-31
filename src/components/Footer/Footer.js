@@ -5,14 +5,14 @@ const Footer = () => {
     return(
         <footer className="contenedor-footer">
             <div>
-                <p>© Diamond - Shop</p>
+                <p>© DIAMOND - SHOP</p>
             </div>
             <div className='redes-footer'>
-                <img src="/assets/facebook.png" alt="Facebook"/>
-                <img src="/assets/instagram.png" alt="Instagram"/>
-                <img src="/assets/twitter.png" alt="Twitter"/>
-                <img src="/assets/pinterest.png" alt="Pinterest"/>
-                <img src="/assets/whatsapp.png" alt="Whatsapp"/>
+                <img src="/assets/facebook-b.png" alt="Facebook"/>
+                <img src="/assets/instagram-b.png" alt="Instagram"/>
+                <img src="/assets/twitter-b.png" alt="Twitter"/>
+                <img src="/assets/pinterest-b.png" alt="Pinterest"/>
+                <img src="/assets/whatsapp-b.png" alt="Whatsapp"/>
             </div>
         </footer>
     )
