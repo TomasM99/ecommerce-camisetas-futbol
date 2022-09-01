@@ -15,9 +15,13 @@
     }
     .imagen-404{
         padding-bottom: 3%;
+        img{
+            height: 128px;
+        }
     }
     .boton-404{
         font-size: x-large;
-        padding: 0% 40px 0% 40px;
+        padding: 0% 35px 0% 35px;
+        border-radius: 0%;
     }
 }
