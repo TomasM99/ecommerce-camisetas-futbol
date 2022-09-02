@@ -2,7 +2,6 @@ FALTA HACER
 -Agregar contenido a la home
 -Agregar contenido en nosotros
 
--Agregar spinner de carga cuando se genera la orden
 -Modificar todo el diseño del modal y del formulario (validaciones y demas)
 
 -Agregar la informacion del proyecto al archivo README, librerias, deploy, explicacion + GIF de recorrido por la pagina
