@@ -1,92 +1,38 @@
-#Diamond - Shop
+# Diamond - Shop
 
-[TOC]
+## Introducción
+Diamond - Shop es un ecommerce realizado con ReactJS como proyecto final para el curso de Desarrollo FrontEnd en ReactJS para CoderHouse.
+<!-- Agregar mas contenido introductorio-->
+<!-- De que es la app, la idea general y como surgio -->
+<!-- Pagina a github pages -->
 
-##Introducción
+## Instalación
+<!-- Como se creo la app -->
+<!-- Como se corre la app (clone, npm start y demas) -->
+<!-- Como se instalan las dependencias -->
 
-##Instalación
+## Funcionalidades
+<!-- Que se puede hacer con la app, que finalidad tiene -->
+<!-- Navegar por el sitio, ver cada producto en detalle, agregarlo/sacarlo de favoritos, agregarlo/sacarlo del carrito, comprar mas de un producto teniendo en cuenta el stock disponible, poder realizar la compra generando una orden y guardandola en firebase -->
 
-##Funcionalidades
+## Gif recorrido
+<!-- Gif explicativo mostrando el recorrido de una compra -->
+<!-- Link al drive en caso de que no pueda subirlo aca o tambien dejarlo aca -->
 
-##Gif recorrido
+## Código
+<!-- Explicacion de que se viene a continuacion -->
 
-##Código
+### Componentes
+<!-- Que componentes hay y porque estan -->
+<!-- Para que sirven -->
 
-###Componentes
+### Dependencias
+<!-- Explicar para que estan las dependencias, mostrar todas -->
+<!-- Bootstrap/React Boostrap, Toastify, Firebase, react router dom, react spinners, sass -->
 
-###Librerías
+### Base de datos
+<!-- Hablar unicamente de la dependencia de Firebase -->
 
-###Base de datos
-
-##Mejoras
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Mejoras
+<!-- Que se puede agregar al proyecto, funcionalidades extras, que tan facil/dificil podria llegar a ser -->
+<!-- Que se puede mejorar de lo que ya tengo, codigo repetido, funcionalidades con bugs, abstracciones en componentes reutilizables -->
