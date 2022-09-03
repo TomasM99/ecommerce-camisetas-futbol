@@ -2,10 +2,5 @@ FALTA HACER
 -Agregar contenido a la home
 -Agregar contenido en nosotros
 
--Modificar todo el diseño del modal y del formulario (validaciones y demas)
-
 -Agregar la informacion del proyecto al archivo README, librerias, deploy, explicacion + GIF de recorrido por la pagina
 -Subir pagina a github pages (Cuando sea la version final)
-
-ACOMODAR
--Corregir bugs en el momento de compra

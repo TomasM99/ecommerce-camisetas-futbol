@@ -106,7 +106,11 @@ function Cart() {
                     {success ? (
                         <>
                             <h2 className='titulo-modal'>Compra exitosa!</h2>
-                            <p>Orden con ID: {success}</p>
+                            <div className='parrafo-success'>
+                                <p>En el correo enviado estan explicados los pasos a seguir para que obtenga su producto y tenga seguimiento de su pedido.</p>
+                                <p>Su orden tiene el siguiente ID: <strong>{success}</strong>.</p>
+                                <p>Muchas gracias por su compra!</p>
+                            </div>
                         </>
                     ) : (
                         <>
