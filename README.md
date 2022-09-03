@@ -1,3 +1,25 @@
+#Diamond - Shop
+
+[TOC]
+
+##Introducción
+
+##Instalación
+
+##Funcionalidades
+
+##Gif recorrido
+
+##Código
+
+###Componentes
+
+###Librerías
+
+###Base de datos
+
+##Mejoras
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
