@@ -1,5 +1,5 @@
 # Diamond - Shop
-![React](https://img.shields.io/badge/react-18.2.0-%2361DAFB?style=for-the-badge&logo=react)
+![React](https://img.shields.io/badge/react-18.2.0-61dafb?style=for-the-badge&logo=react)
 >Realizado por Tomás Margiottiello.
 
 ## Introducción
@@ -48,13 +48,13 @@ Como ya fue mencionado previamente la aplicación web es un ecommerce de camiset
 
 ### Dependencias
 <!-- Explicar para que estan las dependencias, mostrar todas -->
-![Bootstrap](https://img.shields.io/badge/bootstrap-v5.2.0-%236610f2?style=flat-square)
-![React-Bootstrap](https://img.shields.io/badge/react--bootstrap-v2.5.0-%236610f2?style=flat-square)
-![React-Toastify](https://img.shields.io/badge/react--toastify-v9.0.8-cb3234?style=flat-square)
-![Firebase](https://img.shields.io/badge/firebase-v9.9.2-orange?style=flat-square)
-![React-router-dom](https://img.shields.io/badge/react--router--dom-v6.3.0-blue?style=flat-square)
-![React-spinners](https://img.shields.io/badge/react--spinners-v0.13.4-brightgreen?style=flat-square)
-![Sass](https://img.shields.io/badge/sass-1.53.0-ff69b4?style=flat-square)
+![Bootstrap](https://img.shields.io/badge/bootstrap-v5.2.0-7952b3?style=flat-square&logo=bootstrap)
+![React-Bootstrap](https://img.shields.io/badge/react--bootstrap-v2.5.0-7952b3?style=flat-square&logo=bootstrap)
+![React-Toastify](https://img.shields.io/badge/react--toastify-v9.0.8-blue?style=flat-square&logo=react)
+![Firebase](https://img.shields.io/badge/firebase-v9.9.2-ffca28?style=flat-square&logo=firebase)
+![React-router-dom](https://img.shields.io/badge/react--router--dom-v6.3.0-ca4245?style=flat-square&logo=reactrouter)
+![React-spinners](https://img.shields.io/badge/react--spinners-v0.13.4-brightgreen?style=flat-square&logo=react)
+![Sass](https://img.shields.io/badge/sass-1.53.0-cc6699?style=flat-square&logo=sass)
 
 ### Base de datos
 <!-- Hablar unicamente de la dependencia de Firebase -->
