@@ -1,4 +1,5 @@
 # Diamond - Shop
+![React](https://img.shields.io/badge/react-18.2.0-%2361DAFB?style=for-the-badge&logo=react)
 >Realizado por Tomás Margiottiello.
 
 ## Introducción
@@ -16,14 +17,14 @@ Para la visualización y conocer la app mas a fondo se cuenta con una breve desc
 <!-- Como se instalan las dependencias -->
 
 ## Funcionalidades
-Como ya fue mencionado previamente la aplicación web es un ecommerce de camisetas de fútbol. Si bien de cierta forma es una simulación nos permite realizar un recorrido completo para la compra de un producto o más, desde que lo seleccionamos hasta que se nos genera una orden de compra.
+Como ya fue mencionado previamente la aplicación web es un ecommerce de camisetas de fútbol. Si bien de cierta forma es una simulación, nos permite realizar un recorrido completo para la compra de un producto o más, desde que lo seleccionamos hasta que se nos genera una orden de compra.
 
 ### Detalle:
 - Navegación: por medio de componentes y hooks de React, además de la dependencia *react-router-dom* la app cuenta con una libre navegación entre diferentes pantallas cargando y descargando los componentes necesarios, sin necesidad de recargar la página. Por medio de botones guía y sentido común, la navegación del sitio es sencilla y sin complicaciones extra para su entendimiento.
 
 - Filtrado categorias: se cuenta con filtros para los productos, separándolos por categorías. En este caso selecciones, clubes argentinos y clubes europeos. Solución escalable para el agregado de múltiples categorías extra.
 
-- Detalle de producto: podemos ver cada producto detalle, mostrando su imagen más grande, una descripción, precio y la posibilidad de agregar al carrito y/o a favoritos.
+- Detalle de producto: podemos ver cada producto en detalle, mostrando su imagen más grande, una descripción, el precio y la posibilidad de agregar al carrito y/o a favoritos.
 
 - Favoritos: como fue mencionado cada producto puede ser agregado/quitado de favoritos y cuenta con su respectiva sección para el manejo en conjunto de los mismos.
 
@@ -34,6 +35,7 @@ Como ya fue mencionado previamente la aplicación web es un ecommerce de camiset
 - Generación de orden: una vez llenado el carrito se nos despliega un formulario para completar ciertos datos y generar la orden. Se envía esta información a firebase donde se genera un documento devolviendonos así un ID único que identifica a la compra y es mostrado al usuario.
 
 ## Gif recorrido
+>El siguiente gif muestra el recorrido para realizar una compra.
 <!-- Gif explicativo mostrando el recorrido de una compra -->
 <!-- Link al drive en caso de que no pueda subirlo aca o tambien dejarlo aca -->
 
@@ -46,7 +48,13 @@ Como ya fue mencionado previamente la aplicación web es un ecommerce de camiset
 
 ### Dependencias
 <!-- Explicar para que estan las dependencias, mostrar todas -->
-<!-- Bootstrap/React Boostrap, Toastify, Firebase, react router dom, react spinners, sass -->
+![Bootstrap](https://img.shields.io/badge/bootstrap-v5.2.0-%236610f2?style=flat-square)
+![React-Bootstrap](https://img.shields.io/badge/react--bootstrap-v2.5.0-%236610f2?style=flat-square)
+![React-Toastify](https://img.shields.io/badge/react--toastify-v9.0.8-cb3234?style=flat-square)
+![Firebase](https://img.shields.io/badge/firebase-v9.9.2-orange?style=flat-square)
+![React-router-dom](https://img.shields.io/badge/react--router--dom-v6.3.0-blue?style=flat-square)
+![React-spinners](https://img.shields.io/badge/react--spinners-v0.13.4-brightgreen?style=flat-square)
+![Sass](https://img.shields.io/badge/sass-1.53.0-ff69b4?style=flat-square)
 
 ### Base de datos
 <!-- Hablar unicamente de la dependencia de Firebase -->
