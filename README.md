@@ -3,11 +3,11 @@
 >Realizado por Tomás Margiottiello.
 
 ## Introducción
-Diamond - Shop es un ecommerce realizado con ReactJS como proyecto final para el curso de Desarrollo FrontEnd en ReactJS para CoderHouse. Tiempo estimado de dos meses entre cursado y desarrollo de la aplicacion.
+Diamond - Shop es un ecommerce realizado con ReactJS como proyecto final para el curso de Desarrollo FrontEnd en ReactJS para CoderHouse. Tiempo estimado de dos meses entre cursado y desarrollo de la aplicación.
 
 La temática es sobre camisetas de fútbol de distintos países, clubes argentinos y clubes europeos. La idea surge con el fin de un fácil acceso a imágenes ya que hay gran cantidad en internet y no solamente quedarnos con un ecommerce de ropa.
 
-Para la visualización y conocer la app mas a fondo se cuenta con una breve descripcion de la instalación. Igualmente para un más fácil acceso se encuentra en el siguiente link de github pages.
+Para la visualización y conocer la app mas a fondo se cuenta con una breve descripción de la instalación. Igualmente para un más fácil acceso se encuentra en el siguiente link de github pages.
 
 <!-- Pagina a github pages -->
 
@@ -22,16 +22,16 @@ Corremos el siguiente comando desde la consola, parados en la carpeta clonada:
 
 `npm start`
 
-Luego de unos instantes la app se abrirá en nuestro navegador.
+Luego de unos instantes se instalarán las dependencias y se abrirá en nuestro navegador.
 
 ## Funcionalidades
 Como ya fue mencionado previamente la aplicación web es un ecommerce de camisetas de fútbol. Si bien de cierta forma es una simulación, nos permite realizar un recorrido completo para la compra de un producto o más, desde que lo seleccionamos hasta que se nos genera una orden de compra.
 
 - Navegación por medio de componentes, hooks y dependencias permitiendo mostrar diferentes pantallas sin necesidad de recargar la página.
 
-- Filtrado por categorias de los productos.
+- Filtrado por categorías de los productos.
 
-- Detalle del producto donde podemos interactuar con el mismo.
+- Detalle del producto donde podemos interactuar con él mismo.
 
 - Manejo de favoritos.
 
@@ -50,10 +50,19 @@ Como ya fue mencionado previamente la aplicación web es un ecommerce de camiset
 A continuación se comentan un poco los componentes creados y las dependencias utilizadas para enriquecer y facilitar el trabajo.
 
 ### Componentes
-Cada parte de la app interactua con distintos componentes, los más destacables son los siguientes:
+Cada parte de la app interactúa con distintos componentes, los más destacables son los siguientes:
 
 ~~~ JavaScript
 <NavBar />
+<CartWidget />
+<Cart />
+<ItemListContainer />
+<Item />
+<ItemDetal />
+<Item />
+<ItemCount />
+<Modal />
+<Error404 />
 ~~~
 
 ### Dependencias
@@ -76,7 +85,7 @@ Nos permite escribir las sentencias CSS de una manera mas amigable y sencilla.
 
 ![React-Toastify](https://img.shields.io/badge/react--toastify-v9.0.8-blue?style=flat-square&logo=react)
 
-Generacion de alertas y notificaciones ante eventos.
+Generación de alertas y notificaciones ante eventos.
 
 ![React-spinners](https://img.shields.io/badge/react--spinners-v0.13.4-brightgreen?style=flat-square&logo=react)
 
@@ -84,7 +93,7 @@ Nos proporciona distintos spinner para pantallas de carga.
 
 ![React-router-dom](https://img.shields.io/badge/react--router--dom-v6.3.0-ca4245?style=flat-square&logo=reactrouter)
 
-Libreria utilizada para el manejo de enlaces dentro de React, llevandonos de una pantalla a otra sin recargar el contenido.
+Librería utilizada para el manejo de enlaces dentro de React, llevándonos de una pantalla a otra sin recargar el contenido.
 
 **Base de datos:**
 
