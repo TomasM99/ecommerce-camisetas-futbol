@@ -50,13 +50,16 @@ Como ya fue mencionado previamente la aplicación web es un ecommerce de camiset
 A continuación se comentan un poco los componentes creados y las dependencias utilizadas para enriquecer y facilitar el trabajo.
 
 ### Componentes
-<!-- Que componentes hay y porque estan -->
-<!-- Para que sirven -->
+Cada parte de la app interactua con distintos componentes, los más destacables son los siguientes:
+
+~~~ JavaScript
+<NavBar />
+~~~
 
 ### Dependencias
 Todas las dependencias se instalan mediante npm y nos sirven para resolver una pequeña problemática o darnos contenido extra de estilos, etc.
 
-Ejemplo de instalacion:
+Ejemplo de instalación: (parados en la carpeta del proyecto)
 
 `npm install sass`
 
@@ -88,7 +91,3 @@ Libreria utilizada para el manejo de enlaces dentro de React, llevandonos de una
 ![Firebase](https://img.shields.io/badge/firebase-v9.9.2-ffca28?style=flat-square&logo=firebase)
 
 Servicio proporcionado por google que nos brinda distintas funcionalidades, en específico usamos firestore que es una base de datos NoSQL para almacener productos y guardar las órdenes de compras generadas.
-
-## Mejoras
-<!-- Que se puede agregar al proyecto, funcionalidades extras, que tan facil/dificil podria llegar a ser -->
-<!-- Que se puede mejorar de lo que ya tengo, codigo repetido, funcionalidades con bugs, abstracciones en componentes reutilizables -->
