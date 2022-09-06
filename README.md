@@ -7,9 +7,7 @@ Diamond - Shop es un ecommerce realizado con ReactJS como proyecto final para el
 
 La temática es sobre camisetas de fútbol de distintos países, clubes argentinos y clubes europeos. La idea surge con el fin de un fácil acceso a imágenes ya que hay gran cantidad en internet y no solamente quedarnos con un ecommerce de ropa.
 
-Para la visualización y conocer la app mas a fondo se cuenta con una breve descripción de la instalación. Igualmente para un más fácil acceso se encuentra en el siguiente link de github pages.
-
-<!-- Pagina a github pages -->
+Para la visualización y conocer la app mas a fondo se cuenta con una breve descripción de la instalación.
 
 ## Instalación
 Debemos seguir los siguientes pasos para correr la app en nuestro localhost.

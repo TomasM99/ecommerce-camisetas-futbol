@@ -2,5 +2,4 @@ FALTA HACER
 -Agregar contenido a la home
 -Agregar contenido en nosotros
 
--Terminar README
 -Subir pagina a github pages (Cuando sea la version final)
