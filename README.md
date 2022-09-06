@@ -1,4 +1,4 @@
-# Diamond - Shop
+# Diamond - Shop :gem:
 ![React](https://img.shields.io/badge/react-18.2.0-61dafb?style=for-the-badge&logo=react)
 >Realizado por Tomás Margiottiello.
 
@@ -47,7 +47,7 @@ Como ya fue mencionado previamente la aplicación web es un ecommerce de camiset
 <!-- Para que sirven -->
 
 ### Dependencias
-<!-- Explicar para que estan las dependencias, mostrar todas -->
+<!-- Explicar para que estan las dependencias -->
 ![Bootstrap](https://img.shields.io/badge/bootstrap-v5.2.0-7952b3?style=flat-square&logo=bootstrap)
 ![React-Bootstrap](https://img.shields.io/badge/react--bootstrap-v2.5.0-7952b3?style=flat-square&logo=bootstrap)
 ![React-Toastify](https://img.shields.io/badge/react--toastify-v9.0.8-blue?style=flat-square&logo=react)
