@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ecommerce-camisetas-futbol/static/css/main.987805c0.css",
+    "main.js": "/ecommerce-camisetas-futbol/static/js/main.8e41b6ab.js",
+    "index.html": "/ecommerce-camisetas-futbol/index.html",
+    "main.987805c0.css.map": "/ecommerce-camisetas-futbol/static/css/main.987805c0.css.map",
+    "main.8e41b6ab.js.map": "/ecommerce-camisetas-futbol/static/js/main.8e41b6ab.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.987805c0.css",
+    "static/js/main.8e41b6ab.js"
+  ]
+}
