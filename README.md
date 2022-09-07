@@ -54,10 +54,10 @@ Cada parte de la app interactúa con distintos componentes, los más destacables
 <NavBar />
 <CartWidget />
 <Cart />
+<ItemCart />
 <ItemListContainer />
 <Item />
-<ItemDetal />
-<Item />
+<ItemDetail />
 <ItemCount />
 <Modal />
 <Error404 />
