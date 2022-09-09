@@ -1,6 +1,7 @@
 # Diamond - Shop :gem:
 ![React](https://img.shields.io/badge/react-18.2.0-61dafb?style=for-the-badge&logo=react)
->Realizado por Tomás Margiottiello.
+>Realizado por
+[Tomás Margiottiello](https://www.linkedin.com/in/tomas-margiottiello-368341228/).
 
 ## Introducción
 Diamond - Shop es un ecommerce realizado con ReactJS como proyecto final para el curso de Desarrollo FrontEnd en ReactJS para CoderHouse. Tiempo estimado de dos meses entre cursado y desarrollo de la aplicación.
@@ -41,8 +42,11 @@ Como ya fue mencionado previamente la aplicación web es un ecommerce de camiset
 
 ## Gif recorrido
 >El siguiente gif muestra el recorrido para realizar una compra.
-<!-- Gif explicativo mostrando el recorrido de una compra -->
-<!-- Link al drive en caso de que no pueda subirlo aca o tambien dejarlo aca -->
+
+![Gif](./public/assets/recorrido-ecommerce.gif)
+
+Toca
+[acá](https://drive.google.com/drive/folders/164rWMGmadz3vgjh4kFGRKtm-Rd02kSQj?usp=sharing) para ver el gif con mas detenimiento en forma de video.
 
 ## Código
 A continuación se comentan un poco los componentes creados y las dependencias utilizadas para enriquecer y facilitar el trabajo.
