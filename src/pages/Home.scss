@@ -41,3 +41,28 @@
         }
     }
 }
+.home-botones-categorias{
+    display: flex;
+    justify-content: center;
+    margin: 2.5% 0% 2.5% 0%;
+    .boton-link{
+        width: 20%;
+        margin: 0% 4% 0% 4%;
+        .boton-categoria{
+            width: 100%;
+            font-size: 30px;
+            border: 1px solid black;
+            border-radius: 0%;
+        }
+    }
+}
+.home-titulo{
+    margin-left: 4%;
+    font-size: 40px;
+    text-decoration: underline;
+}
+.home-lista-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
