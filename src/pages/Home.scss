@@ -1,0 +1,43 @@
+.home-banner{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #39356b;
+    height: 80vh;
+    .banner-texto{
+        margin: 0% 5% 0% 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 35%;
+        color: white;
+        h1{
+            font-size: 60px;
+        }
+        p{
+            font-size: 25px;
+        }
+        .banner-boton{
+            font-size: 20px;
+            border: 1px solid white;
+            border-radius: 0%;
+            color: white;
+        }
+    }
+    .banner-imagenes{
+        position: relative;
+        width: 60%;
+        img{
+            border: 1px solid white;
+            position: absolute;
+            height: 350px;
+        }
+        .banner-i-1{
+            top: 20%;
+        }
+        .banner-i-2{
+            top: 5%;
+            right: 15%;
+        }
+    }
+}
